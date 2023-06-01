@@ -50,14 +50,14 @@ https://drive.google.com/drive/folders/1PyQJmkdCsAkOYwUyaj_l-l0as-iLDgeH (vox-cp
 소스 이미지와 기반이 될 비디오 파일을 적용하기 위하여  
 클론한 최상위 폴더에 dataSet이라는 이름의 폴더를 만들고 그 안에 사용할 png, mp4 선정하여 저장
 
-[명령어 수정]
-repository 권장 기본 입력코드 ->
+[명령어 수정]  
+repository 권장 기본 입력코드 ->  
 python demo.py --config config/dataset_name.yaml --driving_video path/to/driving --source_image path/to/source --checkpoint path/to/checkpoint --relative --adapt_scale
 
-Day2 초기 result를 얻기 위한 입력코드 ->
+Day2 초기 result를 얻기 위한 입력코드 ->  
 python demo.py --config .\config\bair-256.yaml --driving_video dataSet\04.mp4 --source_image dataSet\01.png --checkpoint .\bair-cpk.pth.tar --relative --adapt_scale --cpu
 
-기존 명령어 뒤에 —cpu를 추가해야함. >> 아래의 오류를 —cpu로 해결함
+기존 명령어 뒤에 —cpu를 추가해야함. >> 아래의 오류를 —cpu로 해결함  
 ![errorImg](./image/errorImg.png)
 
 —cpu : GPU가 NVIDIA가 아닌 경우 필요함.
