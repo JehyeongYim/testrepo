@@ -19,26 +19,27 @@
 
 # Installation
 
-[테스트 환경]
-OS : window
+[테스트 환경] \n
+OS : window \n
 python 버전: python3.10.9
 
-[깃허브 주소 및 초기 모듈 설정]
-git clone https://github.com/AliaksandrSiarohin/first-order-model.git
-pip install -r requirements.txt
-pip install ffmpeg-python
-pip install PyYAML==5.3.1
-pip install torch
-pip install torchvision
-pip3 install -U scikit-learn
-pip install ffmpeg
-pip install pandas
-pip install matplotlib
-pip install imageio-ffmpeg
+[깃허브 주소 및 초기 모듈 설정] \n
+git clone https://github.com/AliaksandrSiarohin/first-order-model.git \n
+pip install -r requirements.txt \n
+pip install ffmpeg-python \n
+pip install PyYAML==5.3.1 \n
+pip install torch \n
+pip install torchvision \n
+pip3 install -U scikit-learn \n
+pip install ffmpeg \n
+pip install pandas \n
+pip install matplotlib \n
+pip install imageio-ffmpeg \n
 
 [YAML configs 확인]
 first-order-model 중에서도 이용하는 주제에 따라 사용해야하는 yaml파일이 달라짐
 ![YamlListImg](./image/yamlListImg.png)
+
 E1I3에서는 Facial Expression을 구동하기에 dataset중에서도 vox-256.yaml 파일을 config파일로 지정함
 
 [pretrained data(tar파일) 다운로드]
@@ -58,6 +59,7 @@ python demo.py --config .\config\bair-256.yaml --driving_video dataSet\04.mp4 --
 
 기존 명령어 뒤에 —cpu를 추가해야함. >> 아래의 오류를 —cpu로 해결함
 ![errorImg](./image/errorImg.png)
+
 —cpu : GPU가 NVIDIA가 아닌 경우 필요함.
 
 # Presentation
