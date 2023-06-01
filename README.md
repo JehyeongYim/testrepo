@@ -38,7 +38,7 @@ pip install imageio-ffmpeg
 
 [YAML configs 확인]
 first-order-model 중에서도 이용하는 주제에 따라 사용해야하는 yaml파일이 달라짐
-![YamlListImg][./image/yamlListImg.png]
+![YamlListImg](./image/yamlListImg.png)
 E1I3에서는 Facial Expression을 구동하기에 dataset중에서도 vox-256.yaml 파일을 config파일로 지정함
 
 [pretrained data(tar파일) 다운로드]
@@ -57,7 +57,7 @@ Day2 초기 result를 얻기 위한 입력코드 ->
 python demo.py --config .\config\bair-256.yaml --driving_video dataSet\04.mp4 --source_image dataSet\01.png --checkpoint .\bair-cpk.pth.tar --relative --adapt_scale --cpu
 
 기존 명령어 뒤에 —cpu를 추가해야함. >> 아래의 오류를 —cpu로 해결함
-![errorImg][./image/errorImg.png]
+![errorImg](./image/errorImg.png)
 —cpu : GPU가 NVIDIA가 아닌 경우 필요함.
 
 # Presentation
