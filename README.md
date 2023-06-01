@@ -59,6 +59,6 @@ python demo.py --config .\config\bair-256.yaml --driving_video dataSet\04.mp4 --
 
 기존 명령어 뒤에 —cpu를 추가해야함. >> 아래의 오류를 —cpu로 해결함
 ![errorImg][./image/errorImg.png]
-—cpu : GPU가 NVIDIA가 아닌 경우 필요.
+—cpu : GPU가 NVIDIA가 아닌 경우 필요함.
 
 # Presentation
